@@ -1,0 +1,8 @@
+$hash = password_hash($_POST['pswd'], PASSWORD_DEFAULT);
+	$sql = "insert into accounts(email, fname, lname, passw)";
+	$sql .= " values('{$_POST['email']}','{$_POST['fname']}'";
+	$sql .= ", '{$_POST['lname']}', '$hash')";
+	$error = null;
+
+http://localhost/northwind/welcome.php การเข้า login
+DPU@ATR = password = 789 
